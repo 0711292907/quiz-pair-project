@@ -78,16 +78,16 @@ function showScores() {
 
 // create questions here
 var questions = [
-  new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
-  new Question("Choose the correct HTML element to define important text?",["i","b","strong","important"],"strong"),
-  new Question("Choose the correct HTML heading element for the largest heading?",["h1","heading","head","h6"],"h1"),
-  new Question ("Which character is used to indicate an end tag",["*","<",">","/"],"/"),
-  new Question ("Which HTML  tag is used to define an internal style sheet?",["css","script","style","scripting"],"style"),
+  new Question("Which of the following is not a valid CSS selector?", [".my-class", "#my_id","$invalid", "h1"], "$invalid"),
+  new Question("What is the result of 5 + '5' in JavaScript?",[10,"'55'","5","Error"],"'55'"),
+  new Question(" In JavaScript, what is the purpose of the 'typeof' operator?",["To determine the type of a value or variable","To check if a variable is defined","To create new variables","To assign a new type to a variable"],"To determine the type of a value or variable"),
+  new Question ("Which of the following is not a programming language?",["Python","Java","C++","HTML"],"HTML"),
+  new Question ("What does the CSS property 'display: none;' do?",["Makes an element transparent","Removes an element from the DOM","Hides an element and leaves a blank space","Centers an element on the page"],"Removes an element from the DOM"),
   new Question ("Choose the correct HTML element to define emphasized text?",["italic","i","em","br"],"em"),
-  new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
+  new Question("Which of the following is a version control system?", ["VSCode", "JavaScript", "Git", "Browser"], "Git"),
   new Question("Which is used to insert special character in JavaScript?", ["&", "/","%","-"], "/"),
-  new Question("Which is one is a server-side java script object?", ["file", "function", "Data", "All"], "File"),
-  new Question("what language defines the behavior of a web page", ["HTML", "CSS", "Javascript", "All"], "Javascript"),
+  new Question("Which is one is a server-side JavaScript object?", ["File", "Function", "Data", "All"], "File"),
+  new Question("What is the primary function of a constructor in JavaScript?", [" To remove properties from an object", "To create and initialize objects", "To add methods to an object", "To modify the prototype of an object"], "To create and initialize objects"),
 ];
 
 // create quiz
