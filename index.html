@@ -25,7 +25,9 @@
         </div>
 
         <hr style="margin-top: 50px" />
+
         <p id="retry"></p>
+
         <footer>
           <p id="progress">Question x of y</p>
         </footer>
@@ -33,19 +35,5 @@
     </div>
 
     <script src="main.js"></script>
-
-    <script>
-      // Define the restartQuiz function here
-      function restartQuiz() {
-        let element = document.getElementById("quiz");
-        element.innerHTML = ""; // Clear the HTML content
-
-        // Create a new quiz instance with questions
-        quiz = new Quiz(questions);
-
-        // Display the quiz
-        populate(quiz);
-      }
-    </script>
   </body>
 </html>

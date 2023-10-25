@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-
 let quiz;
 
 // Define the Quiz constructor function
@@ -90,14 +88,22 @@ function showScores(quiz) {
   }
 };
 
+// Function to restart the quiz
+function restartQuiz() {
+  let element = document.getElementById("quiz");
+  element.innerHTML = ''; // Clear the HTML content
 
-// Initialize the quiz when the DOM is fully loaded
-  function initializeQuiz() {
+  // Create a new quiz instance with questions
+  quiz = new Quiz(questions);
+
+  // Display the quiz
+  populate(quiz);
+}
 
 // Define an array of Question objects for the quiz
 const questions = [
   new Question("Which of the following is not a valid CSS selector?", [".my-class", "#my_id", "$invalid", "h1"], "$invalid"),
-  new Question("What is the result of 5 + '5' in JavaScript?",[10,"'55'","5","Error"],"'55'"),
+   new Question("What is the result of 5 + '5' in JavaScript?",[10,"'55'","5","Error"],"'55'"),
   new Question(" In JavaScript, what is the purpose of the 'typeof' operator?",["To determine the type of a value or variable","To check if a variable is defined","To create new variables","To assign a new type to a variable"],"To determine the type of a value or variable"),
   new Question ("Which of the following is not a programming language?",["Python","Java","C++","HTML"],"HTML"),
   new Question ("What does the CSS property 'display: none;' do?",["Makes an element transparent","Removes an element from the DOM","Hides an element and leaves a blank space","Centers an element on the page"],"Removes an element from the DOM"),
@@ -105,8 +111,7 @@ const questions = [
   new Question("Which of the following is a version control system?", ["VSCode", "JavaScript", "Git", "Browser"], "Git"),
   new Question("Which is used to insert special character in JavaScript?", ["&", "/","%","-"], "/"),
   new Question("Which is one is a server-side JavaScript object?", ["File", "Function", "Data", "All"], "File"),
-  new Question("What is the primary function of a constructor in JavaScript?", [" To remove properties from an object", "To create and initialize objects", "To add methods to an object", "To modify the prototype of an object"], "To create and initialize objects"),
-
+  new Question("What is the primary function of a constructor in JavaScript?", [" To remove properties from an object", "To create and initialize objects", "To add methods to an object","To modify the prototype of an object"], "To create and initialize objects"),
 ];
 
 // Create a new Quiz instance with the questions
@@ -114,11 +119,3 @@ quiz = new Quiz(questions);
 
 // Display the quiz
 populate(quiz);
-
-}
-
-// Call the initialization function
-  initializeQuiz();
-});
-
-
