@@ -20,6 +20,10 @@ body {
 
 
 }
+
+#retry {
+    margin: 10px;
+}
  
 .grid {
     width: 90%;

@@ -82,7 +82,7 @@ function showScores(quiz) {
   // Check the user's score and display a message
   if (quiz.score < 5) {
     // User scored less than 5/10, prompt to take the quiz again
-    gameOverHTML += "<p id='retry'>You scored less than 5/10. Would you like to try again?</p>";
+    gameOverHTML += "<p id='retry'> <br /> You scored less than 5. <br /> Would you like to try again?</p>";
     gameOverHTML += "<button onclick='restartQuiz()'>Retry Quiz</button>";
     element.innerHTML = gameOverHTML;
   }
