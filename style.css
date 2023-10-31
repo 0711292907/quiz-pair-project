@@ -90,3 +90,70 @@ body {
     color: #07143a;
     font-size: 20px;
 }
+
+body {
+        font-family: "Tilt Neon";
+        background-color: black;
+        background-image: url("giphy\ \(3\).gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+
+:root {
+    --primary-color : rgb(184, 210, 231);
+}
+
+.quiz-container {
+    margin: 90px auto;
+    background-color: transparent;
+    max-width: 800px;
+    padding: 70px 50px;
+    border: none; 
+}
+
+h1 {
+    color: rgb(4, 139, 202);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+button {
+    background-color: indianred;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fcd3d3;
+    border: 1px solid #1D3C6A;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px #aab2b4;
+    margin: 40px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+        color: brown;
+        background-color: #fadbae;
+}
+
+#question-container {
+    color: var(--primary-color);
+    padding: 20px 0 20px 0;
+    
+    
+}
+
+#result-container {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+#progress {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+}
